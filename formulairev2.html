@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body bgcolor="pink">
+	<header>  
+    <h1>Inscription d'un Nouveau client</h1>  
+</header>
+
+<section>  
+    <form action="#" method="post" aria-label="Formulaire d'inscription">  
+        <!-- Élément 0 — Structure de départ et titre du formulaire (déjà dans le h1 et form) -->
+
+        <!-- Élément 1 — Nom (champ texte) -->  
+        <label for="nom">Nom :</label>  
+        <input type="text" id="nom" name="nom">  
+        <br>
+
+        <!-- Élément 2 — Prénom (champ texte) -->  
+        <label for="prenom">Prénom :</label>  
+        <input type="text" id="prenom" name="prenom">  
+        <br>
+
+        <!-- Élément 3 — Date de naissance -->  
+        <label for="date_naissance">Date de naissance :</label>  
+        <input type="date" id="date_naissance" name="date_naissance">  
+        <br>
+
+        <!-- Élément 4 — Adresse mail -->  
+        <label for="email">Adresse mail :</label>  
+        <input type="email" id="email" name="email">  
+        <br>
+
+        <!-- Élément 5 — Mot de passe -->  
+        <label for="mdp">Mot de passe :</label>  
+        <input type="password" id="mdp" name="mdp">  
+        <br>
+
+        <!-- Élément 6 — Numéro de permis de conduire -->  
+        <label for="permis">Numéro de permis :</label>  
+        <input type="text" id="permis" name="permis">  
+        <br>
+
+        <!-- Élément 7 — Nombre d'années d'ancienneté (nombre) -->  
+        <label for="anciennete">Nombre d'années d'ancienneté (permis) :</label>  
+        <input type="number" id="anciennete" name="anciennete" min="0" max="80">  
+        <br>
+
+        <!-- Élément 8 — Ville (liste déroulante) -->  
+        <label for="ville">Ville :</label>  
+        <select id="ville" name="ville">  
+            <option value="paris">Paris</option>  
+            <option value="versailles">Versailles</option>  
+            <option value="creteil">Créteil</option>  
+        </select>  
+        <br>
+
+        <!-- Élément 9 — Adresse du client (zone de texte) -->  
+        <label for="adresse">Adresse du client :</label>  
+        <textarea id="adresse" name="adresse" rows="4" cols="30"></textarea>  
+        <br>
+
+        <!-- Élément 10 — Situation matrimoniale (boutons radio) -->  
+        <p>Situation matrimoniale :</p>  
+        <label for="marie_oui">  
+            <input type="radio" id="marie_oui" name="situation_matrimoniale" value="oui"> Marié  
+        </label>  
+        <label for="marie_non">  
+            <input type="radio" id="marie_non" name="situation_matrimoniale" value="non"> Non marié  
+        </label>  
+        <br>
+
+        <!-- Élément 11 — Préférence de voiture (cases à cochées) -->  
+        <p>Préférence de voiture :</p>  
+        <label for="pref_auto">  
+            <input type="checkbox" id="pref_auto" name="preference_auto" value="auto">  
+            Automatique  
+        </label>  
+        <label for="pref_manuelle">  
+            <input type="checkbox" id="pref_manuelle" name="preference_manuelle" value="manuelle">  
+            Manuelle  
+        </label>  
+        <br>
+
+        <!-- Boutons de fin de formulaire (Élément 12) -->  
+        <button type="submit">Enregistrer</button>  
+        <button type="reset">Annuler</button>  
+    </form>  
+</section>
+
+<footer>  
+    <p>© 2026 Agence Méditerranée - Location de véhicules</p>  
+</footer>
+
+</body>
+</html>
