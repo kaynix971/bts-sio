@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+        <a href="formulairev2.html"> 2e formulaire</a> <br>
+
+    <title>Ajout d'un véhicule - Agence Méditerranée</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body bgcolor="blue cyan">
+    <h1>Ajout d'un véhicule</h1>
+
+    <form action="#" method="post" aria-label="Formulaire d'ajout de véhicule">
+        <table border="0" width="60%">
+            <!-- Marque -->
+            <tr>
+                <td><label for="marque">Marque :</label></td>
+                <td>
+                    <select id="marque" name="marque" required>
+                        <option value="peugeot">Peugeot</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="renault">Renault</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Immatriculation -->
+            <tr>
+                <td><label for="immatriculation">Immatriculation :</label></td>
+                <td><input type="text" id="immatriculation" name="immatriculation" required></td>
+            </tr>
+
+            <!-- Couleur -->
+            <tr>
+                <td><label for="couleur">Couleur :</label></td>
+                <td><input type="text" id="couleur" name="couleur" required></td>
+            </tr>
+
+            <!-- Date d'immatriculation -->
+            <tr>
+                <td><label for="date_immatriculation">Date d'immatriculation :</label></td>
+                <td><input type="date" id="date_immatriculation" name="date_immatriculation" required></td>
+            </tr>
+
+            <!-- Kilométrage -->
+            <tr>
+                <td><label for="kilometrage">Kilométrage :</label></td>
+                <td><input type="number" id="kilometrage" name="kilometrage" min="0" required></td>
+            </tr>
+
+            <!-- État -->
+            <tr>
+                <td><span>État :</span></td>
+                <td>
+                    <label for="etat_occasion">
+                        <input type="radio" id="etat_occasion" name="etat" value="occasion" required> Occasion
+                    </label>
+                    <label for="etat_neuf">
+                        <input type="radio" id="etat_neuf" name="etat" value="neuf" required> Neuf
+                    </label>
+                </td>
+            </tr>
+
+            <!-- Carburant -->
+            <tr>
+                <td><span>Carburant :</span></td>
+                <td>
+                    <label for="carburant_hybride">
+                        <input type="radio" id="carburant_hybride" name="carburant" value="hybride" required> Hybride
+                    </label>
+                    <label for="carburant_electrique">
+                        <input type="radio" id="carburant_electrique" name="carburant" value="electrique" required> Électrique
+                    </label>
+                    <label for="carburant_diesel">
+                        <input type="radio" id="carburant_diesel" name="carburant" value="diesel" required> Diesel
+                    </label>
+                    <label for="carburant_essence">
+                        <input type="radio" id="carburant_essence" name="carburant" value="essence" required> Essence
+                    </label>
+                </td>
+            </tr>
+
+            <!-- Boîte de vitesses (choix libre) -->
+            <tr>
+                <td><label for="boite_vitesses">Boîte de vitesses :</label></td>
+                <td>
+                    <!-- Justification: choix d'une liste déroulante pour une sélection unique et lisible -->
+                    <select id="boite_vitesses" name="boite_vitesses" required>
+                        <option value="automatique">Automatique</option>
+                        <option value="manuelle">Manuelle</option>
+                        <option value="robotisee">Robotisée</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Nombre de portes (choix libre) -->
+            <tr>
+                <td><label for="nb_portes">Nombre de portes :</label></td>
+                <td>
+                    <!-- Justification: radio pour choix exclusif entre options courantes -->
+                    <label for="portes_2">
+                        <input type="radio" id="portes_2" name="nb_portes" value="2" required> 2
+                    </label>
+                    <label for="portes_4">
+                        <input type="radio" id="portes_4" name="nb_portes" value="4" required> 4
+                    </label>
+                    <label for="portes_5">
+                        <input type="radio" id="portes_5" name="nb_portes" value="5" required> 5
+                    </label>
+                </td>
+            </tr>
+
+            <!-- Donnée supplémentaire n°1 proposée par l'élève -->
+            <tr>
+                <td><label for="donnee_sup1">Donnée supplémentaire n°1 :</label></td>
+                <td><input type="text" id="donnee_sup1" name="donnee_sup1"></td>
+            </tr>
+
+            <!-- Donnée supplémentaire n°2 proposée par l'élève -->
+            <tr>
+                <td><label for="donnee_sup2">Donnée supplémentaire n°2 :</label></td>
+                <td><input type="text" id="donnee_sup2" name="donnee_sup2"></td>
+            </tr>
+
+            <!-- Données à choix libre (exemple: tarifLocation journalier) -->
+            <tr>
+                <td><label for="tarif_journalier">Tarif journalier (€) :</label></td>
+                <td><input type="number" id="tarif_journalier" name="tarif_journalier" step="0.01" min="0"></td>
+            </tr>
+
+            <!-- Disponibilité du véhicule -->
+            <tr>
+                <td><label for="disponibilite">Disponibilité :</label></td>
+                <td>
+                    <label for="disponible">
+                        <input type="checkbox" id="disponible" name="disponible" value="oui" checked> Disponible
+                    </label>
+                </td>
+            </tr>
+
+            <!-- Boutons de fin de formulaire -->
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <button type="submit">Enregistrer</button>
+                    <button type="reset">Annuler</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
